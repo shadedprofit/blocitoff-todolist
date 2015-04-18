@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Use Bootstrap for CSS
+gem 'bootstrap-sass'
 # Use SQLite3 for Database in development and Rails 12 Factor for deployment on Heroku
 group :production do
   gem 'pg'
