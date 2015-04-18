@@ -1,11 +1,18 @@
 source 'https://rubygems.org'
 
+# Use SQLite3 for Database in development and Rails 12 Factor for deployment on Heroku
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
+group :development do
+  gem 'sqlite3'
+end
 # Use Devise for User sign in and authentication
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
