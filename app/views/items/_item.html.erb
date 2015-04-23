@@ -1,7 +1,5 @@
-<%= content_tag :div, class: 'media', id: "item-#{item.id}" do %>
-  <tr>
-    <td><%= item.user.name %></td>
+<%= content_tag :tr, class: 'media', id: "item-#{item.id}" do %>
+    <td><%= item.name %></td>
     <td>7</td>
     <td>Checkbox pending</td>
-  </tr>
 <% end %>

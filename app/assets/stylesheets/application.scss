@@ -23,3 +23,21 @@
 .nav {
   margin-top: 5px;
 }
+
+.grid {
+  width: 100%;
+  padding: 5px;
+  font: 16px;
+  border: solid 1px black;
+  border-radius: 20px;
+}
+
+.grid th {
+  text-align: center;
+  font: 20px;
+}
+
+.grid td {
+  border: solid 1px black;
+  padding: 5px;
+}

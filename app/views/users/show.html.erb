@@ -8,22 +8,25 @@
     <div class="row">
       <div class="col-md-2"></div>
       <div class="col-md-8">
-        <p class="lead">What do you need to do?</p>
+        <!-- <p class="lead">What do you need to do?</p> -->
+        <br />
         <div class='new-item'>
           <%= render :partial => 'items/form', locals: { user: @user, item: @item } %>
         </div>
-
-        <div class='js-items'>
-          <table>
+        <% if @items %>
+          <br />
+          <table class="grid">
             <tr>
               <th>Description</th>
               <th>Days left</th>
               <th>Complete</th>
             </tr>
-
-            <%= render partial: 'items/item', collection: @items %>
           </table>
-        </div>
+          <table class="grid js-items">
+              <%= render partial: 'items/item', collection: @items %>
+          </table>
+        <% end %>
+        
       </div>
       <div class="col-md-2"></div>
     </div>
