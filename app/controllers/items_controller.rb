@@ -17,6 +17,7 @@ class ItemsController < ApplicationController
     @item = current_user.items.build( item_params )
     @item.user = @user
     @new_item = Item.new
+    @item.save
 
     respond_to do |format|
       format.html

@@ -16,14 +16,19 @@
         <% if @items %>
           <br />
           <table class="grid">
-            <tr>
-              <th>Description</th>
-              <th>Days left</th>
-              <th>Complete</th>
-            </tr>
+            
           </table>
-          <table class="grid js-items">
+          <table class="grid">
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Days left</th>
+                <th>Complete</th>
+              </tr>
+            </thead>
+            <tbody class="js-items">
               <%= render partial: 'items/item', collection: @items %>
+            </tbody>
           </table>
         <% end %>
         
