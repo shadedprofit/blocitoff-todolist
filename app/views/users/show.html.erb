@@ -13,11 +13,8 @@
         <div class='new-item'>
           <%= render :partial => 'items/form', locals: { user: @user, item: @item } %>
         </div>
-        <% if @items %>
+        <% if @item %>
           <br />
-          <table class="grid">
-            
-          </table>
           <table class="grid">
             <thead>
               <tr>

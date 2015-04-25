@@ -16,8 +16,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
 .user-info {
   margin-top: 9px;
+}
+
+ul {
+  background-color: white;
 }
 
 .nav {
@@ -28,16 +33,40 @@
   width: 100%;
   padding: 5px;
   font: 16px;
-  border: solid 1px black;
-  border-radius: 20px;
+  border: solid 1px grey;
+  border-collapse: collapse;
 }
 
 .grid th {
   text-align: center;
-  font: 20px;
+  padding: 5px;
+  border: solid 1px grey;
+  font-size: 16px;
+}
+
+.table-width {
+  width: 80%;
 }
 
 .grid td {
-  border: solid 1px black;
+  border: solid 1px grey;
   padding: 5px;
+  overflow: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+
+table tr:last-child td:first-child {
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 10px !important;
+}
+
+table tr:last-child td:last-child {
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 10px !important;
 }

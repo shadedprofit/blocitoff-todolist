@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Use Faker for seeding data
+gem 'faker'
 # Use Figaro for handling sensitive data using environmental variables
 gem 'figaro', '1.0'
 # Use Bootstrap for CSS
