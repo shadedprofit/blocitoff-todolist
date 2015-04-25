@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Use Whenever to automate rake task to delete items after 7 days
+gem 'whenever', :require => false
 # Use Faker for seeding data
 gem 'faker'
 # Use Figaro for handling sensitive data using environmental variables
