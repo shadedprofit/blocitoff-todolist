@@ -28,6 +28,7 @@ class ItemsController < ApplicationController
   def destroy
     @user = User.find(params[:user_id])
     @item = @user.items.find(params[:id])
+    @item.destroy
 
     respond_to do |format|
       format.html

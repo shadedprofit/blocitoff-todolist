@@ -1,5 +1,5 @@
 <%= content_tag :tr, class: 'media', id: "item-#{item.id}" do %>
     <td><%= item.name %></td>
     <td class="center">7</td>
-    <td class="center"><%= link_to "", [item.user, item], method: :delete, class: 'glyphicon glyphicon-ok', remote: true %></td>
+    <td class="center"><%= link_to "", [item.user, item], class: 'glyphicon glyphicon-ok', method: :delete, remote: true %></td>
 <% end %>
