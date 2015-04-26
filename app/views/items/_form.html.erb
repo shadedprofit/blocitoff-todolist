@@ -11,7 +11,7 @@
   <% end %>
 
   <%= form_group_tag(user.errors[:name]) do %>
-    <%= f.text_area :name, rows: 1, class: 'form-control', placeholder: "Enter a to-do item" %>
+    <%= f.text_field :name, rows: 1, class: 'form-control', placeholder: "Enter a to-do item" %>
   <% end %>
   <div class="form-group">
     <%= f.submit "Add Item", class: 'btn btn-success' %>
